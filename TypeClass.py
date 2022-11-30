@@ -130,10 +130,8 @@ def runSim():
         for pkmn in allPkmn:
             print(pkmn)
             print(pkmn.getScore())
-            writer.writerow([pkmn.getType(), pkmn.getScore()])
+            writer.writerow([pkmn.getType()[0], pkmn.getType()[1], pkmn.getScore()[0], pkmn.getScore()[1]])
         
-
-
 
 if __name__ == "__main__":
     runSim()
